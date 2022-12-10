@@ -1,0 +1,28 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+{$R *.res}
+
+uses
+  System.SysUtils,
+  System.Generics.Collections,
+  System.StrUtils,
+  System.DateUtils,
+  System.Diagnostics,
+  System.Console in 'C:\Users\yvesg\git\DelphiConsole\Console\System.Console.pas';
+
+type
+  tInstruction = class
+
+  end;
+
+var
+  tlInstructions : TStrings;
+
+begin
+  Console.Clear;
+  Console.SetCursorPosition(10, 10);
+  Console.WriteColorLine('Test', [TConsoleColor.DarkBlue, TConsoleColor.White]);
+  Console.ReadKey;
+
+end.
